@@ -28,7 +28,7 @@
             <?php
                 $prodotto = str_replace(' ', '%20', $_REQUEST['prodotto']);
                 $cifra = $_REQUEST['cifra'];
-                $link = 'https://sandbox.paypal.com/cgi-bin/webscr?cmd=_xclick&business=2RVDBF5JPR4BC&item_name=';
+                $link = 'https://sandbox.paypal.com/cgi-bin/webscr?cmd=_xclick&business=<ID-BUSINESS-PAYPAL>&item_name=';
                 $link .= $prodotto;
                 $link .= '&amount=';
                 $link .= $cifra;
